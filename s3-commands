@@ -1,0 +1,10 @@
+aws s3api create-bucket --bucket basa-my-bucket 
+aws s3 ls
+aws s3 ls s3://basa-my-bucket
+aws s3 cp t.txt  s3://basa-my-bucket
+aws s3 cp s3://basa-my-bucket/find.yml  find.yml
+aws cp s3://basa-my-bucket/find.yml  s3://basa-my-bucket1
+aws s3 cp s3://basa-my-bucket . --recursive - downlaod all files to local 
+aws s3 cp s3://basa-my-bucket s3://basa-my-bucket1 --recursive one bucket to another bucket 
+aws s3 rb s3://basa-my-bucket1 --force Delete the bucket 
+
